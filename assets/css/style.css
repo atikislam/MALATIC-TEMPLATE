@@ -1,0 +1,64 @@
+/* Dropdown hover functionality */
+.navbar-nav .dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.navbar-nav .dropdown .dropdown-menu {
+    margin-top: 0;
+    background-color: rgba(0, 0, 0, 0.8) !important;
+    border-radius: 0 !important;
+    border: none !important;
+    padding: 0px !important;
+}
+.navbar-nav .dropdown .dropdown-menu li a:hover {
+    background-color: rgba(0, 0, 0, 0.8) !important;
+}
+.navbar-nav .dropdown .dropdown-menu li a {
+    border-top: 1px solid #ffffff59;
+}
+
+/* Ensure dropdown menu appears above other content */
+.navbar-nav .dropdown .dropdown-menu {
+    z-index: 1000;
+}
+
+/* Optional: Add smooth transition for better UX */
+.navbar-nav .dropdown .dropdown-menu {
+    transition: opacity 0.2s ease-in-out;
+}
+
+.navbar-style-one{
+    border: 1px solid #fff;
+    border-radius: 40px;
+    background-color: #ddd !important;
+    padding: 0px 0px;
+}
+.navbar-style-one .menu-container{
+    background-color: #002d85;
+    border-radius: 40px;
+    margin-right: -9px;
+}
+.navbar-style-one .menu-container ul li a{
+    color: #fff;
+    padding: 10px 20px !important;
+}
+.navbar-style-one .menu-container ul li .active{
+    background-color: #000 !important;
+    color: #fff !important;
+    border-radius: 0px 40px 40px 0;
+    position: relative;
+}
+
+/* Modern angled top border for active menu - left side */
+.navbar-style-one .menu-container ul li .active::before {
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: -11px;
+    width: 0;
+    height: 0;
+    border-left: 45px solid transparent;
+    border-right: 0 solid transparent;
+    border-top: 25px solid #002d85;
+    transform: rotate(-90deg);
+}
