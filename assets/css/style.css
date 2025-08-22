@@ -37,10 +37,12 @@
     background-color: #002d85;
     border-radius: 40px;
     margin-right: -9px;
+    padding-left: 20px;
 }
 .navbar-style-one .menu-container ul li a{
     color: #fff;
     padding: 10px 20px !important;
+    transition: all 0.1s ease;
 }
 .navbar-style-one .menu-container ul li .active{
     background-color: #000 !important;
@@ -51,6 +53,28 @@
 
 /* Modern angled top border for active menu - left side */
 .navbar-style-one .menu-container ul li .active::before {
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: -11px;
+    width: 0;
+    height: 0;
+    border-left: 45px solid transparent;
+    border-right: 0 solid transparent;
+    border-top: 25px solid #002d85;
+    transform: rotate(-90deg);
+}
+
+/* Hover styles that replicate the active design */
+.navbar-style-one .menu-container > ul > li > a:hover {
+    background-color: #000 !important;
+    color: #fff !important;
+    border-radius: 0px 40px 40px 0;
+    position: relative;
+}
+
+/* Modern angled top border for hover menu - left side (same as active) */
+.navbar-style-one .menu-container > ul > li > a:hover::before {
     content: '';
     position: absolute;
     top: 10px;
