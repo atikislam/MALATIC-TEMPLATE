@@ -1,0 +1,394 @@
+/* Home Page Specific Responsive Styles */
+
+/* Responsive adjustments for banner section */
+@media (max-width: 1200px) {
+    .banner-section {
+        height: 700px;
+    }
+}
+
+@media (max-width: 768px) {
+    .banner-section {
+        height: 500px;
+        margin-top: -60px;
+    }
+}
+
+@media (max-width: 480px) {
+    .banner-section {
+        height: 400px;
+        margin-top: -50px;
+    }
+}
+
+/* Client Slider Responsive Styles - Owl Carousel */
+@media (max-width: 768px) {
+    .client-slider .slider-item {
+        gap: 15px;
+    }
+    
+    .client-slider .slider-item-img {
+        max-width: 100px;
+    }
+    
+    .client-slider .owl-nav button {
+        width: 35px !important;
+        height: 35px !important;
+        font-size: 16px !important;
+    }
+    
+    .client-slider .owl-nav .owl-prev {
+        left: 5px !important;
+    }
+    
+    .client-slider .owl-nav .owl-next {
+        right: 5px !important;
+    }
+    
+    .client-slider .owl-carousel {
+        margin: 0px 10px !important;
+    }
+    
+    .client-slider #topCarousel {
+        padding: 15px 0;
+    }
+    
+    .client-slider #bottomCarousel {
+        margin-top: 25px;
+        padding: 15px 0;
+    }
+}
+
+@media (max-width: 576px) {
+    .client-slider .slider-item {
+        gap: 12px;
+    }
+    
+    .client-slider .slider-item-img {
+        max-width: 85px;
+    }
+    
+    .client-slider .owl-nav button {
+        width: 32px !important;
+        height: 32px !important;
+        font-size: 14px !important;
+    }
+    
+    .client-slider .owl-nav .owl-prev {
+        left: 3px !important;
+    }
+    
+    .client-slider .owl-nav .owl-next {
+        right: 3px !important;
+    }
+    
+    .client-slider .owl-carousel {
+        margin: 0px 5px !important;
+    }
+    
+    .client-slider #topCarousel {
+        padding: 12px 0;
+    }
+    
+    .client-slider #bottomCarousel {
+        margin-top: 20px;
+        padding: 12px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .client-slider .slider-item {
+        gap: 10px;
+    }
+    
+    .client-slider .slider-item-img {
+        max-width: 75px;
+    }
+    
+    .client-slider .owl-nav button {
+        width: 30px !important;
+        height: 30px !important;
+        font-size: 12px !important;
+    }
+    
+    .client-slider .owl-nav .owl-prev {
+        left: 2px !important;
+    }
+    
+    .client-slider .owl-nav .owl-next {
+        right: 2px !important;
+    }
+    
+    .client-slider .owl-carousel {
+        margin: 0px 2px !important;
+    }
+    
+    .client-slider #topCarousel {
+        padding: 10px 0;
+    }
+    
+    .client-slider #bottomCarousel {
+        margin-top: 15px;
+        padding: 12px 0;
+    }
+}
+
+/* Products Carousel Responsive Styles - Owl Carousel */
+@media (max-width: 768px) {
+    .counters-products .owl-nav .owl-prev {
+        left: 10px !important;
+    }
+    
+    .counters-products .owl-nav .owl-next {
+        right: 10px !important;
+    }
+    
+    .counters-products .owl-nav button {
+        width: 50px !important;
+        height: 50px !important;
+    }
+    
+    .counters-products .owl-nav button i {
+        font-size: 20px !important;
+    }
+    
+    .counters-products .owl-carousel {
+        padding: 40px 0;
+        overflow: hidden;
+    }
+    
+    .counters-products .owl-carousel .product-item {
+        width: 80% !important;
+        margin: 0 auto !important;
+    }
+}
+
+@media (max-width: 576px) {
+    .counters-products .owl-nav .owl-prev {
+        left: 5px !important;
+    }
+    
+    .counters-products .owl-nav .owl-next {
+        right: 5px !important;
+    }
+    
+    .counters-products .owl-nav button {
+        width: 45px !important;
+        height: 45px !important;
+    }
+    
+    .counters-products .owl-nav button i {
+        font-size: 18px !important;
+    }
+    
+    .counters-products .owl-carousel {
+        padding: 40px 0;
+        overflow: hidden;
+    }
+    
+    .counters-products .owl-carousel .product-item {
+        width: 80% !important;
+        margin: 0 auto !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .counters-products .owl-nav .owl-prev {
+        left: 3px !important;
+    }
+    
+    .counters-products .owl-nav .owl-next {
+        right: 3px !important;
+    }
+    
+    .counters-products .owl-nav button {
+        width: 40px !important;
+        height: 40px !important;
+    }
+    
+    .counters-products .owl-nav button i {
+        font-size: 16px !important;
+    }
+    
+    .counters-products .owl-carousel {
+        padding: 40px 0;
+        overflow: hidden;
+    }
+    
+    .counters-products .owl-carousel .product-item {
+        width: 80% !important;
+        margin: 0 auto !important;
+    }
+}
+
+/* Mobile Responsive Styles for New Sections */
+@media (max-width: 768px) {
+    /* Brands Section Mobile */
+    .brands-text h2 {
+        text-align: center !important;
+        margin-bottom: 30px;
+    }
+    
+    .brands-logos {
+        justify-content: center;
+        gap: 20px;
+    }
+    
+    .brand-logo {
+        max-height: 100px;
+        max-width: 200px;
+    }
+    
+    /* Services Section Mobile */
+    .services {
+        padding: 60px 10px;
+    }
+    
+    .services-text h2 {
+        text-align: center !important;
+        margin-bottom: 40px;
+    }
+    
+    .services-columns {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+    
+    .service-column {
+        padding: 15px;
+        min-height: 220px;
+    }
+    
+    .service-img {
+        width: 60px;
+        height: 60px;
+    }
+    
+    .service-column h3 {
+        font-size: 14px;
+        margin: 0 0 12px 0;
+    }
+    
+    .service-btn {
+        padding: 8px 16px;
+        font-size: 12px;
+    }
+    
+    /* Notice Section Mobile */
+    .notice {
+        padding: 40px 0;
+        position: relative;
+    }
+    
+    .notice::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(255, 255, 255, 0.4);
+        z-index: 1;
+    }
+    
+    .notice .container {
+        position: relative;
+        z-index: 2;
+    }
+    
+    .notice-content h2 {
+        font-size: 36px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    
+    .notice-content p {
+        font-size: 16px;
+        text-align: center;
+    }
+    
+    /* Work With Us Section Mobile */
+    .work-with-us {
+        padding: 40px 0;
+        min-height: 200px;
+    }
+    
+    .work-with-us .row {
+        min-height: 200px;
+    }
+    
+    .work-content h2 {
+        font-size: 36px;
+        margin-bottom: 20px;
+    }
+    
+    .work-btn {
+        width: 250px;
+        font-size: 20px;
+        padding: 8px 30px;
+        min-height: 18px;
+    }
+}
+
+@media (max-width: 576px) {
+    /* Extra Small Mobile */
+    .services-columns {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .service-column {
+        padding: 20px;
+        min-height: 200px;
+    }
+    
+    .brand-logo {
+        max-height: 80px;
+        max-width: 150px;
+    }
+    
+    .work-btn {
+        width: 200px;
+        font-size: 18px;
+    }
+}
+
+/* Distributor Section Mobile Responsive */
+@media (max-width: 768px) {
+    .distributor-image img {
+        margin-bottom: 0;
+        max-width: 350px;
+        width: 100%;
+    }
+    
+    .distributor-content {
+        padding: 40px 20px;
+        text-align: center;
+    }
+    
+    .distributor-content h1 {
+        font-size: 36px;
+        margin-bottom: 20px;
+    }
+    
+    .distributor-content p {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+    
+    .counters-products {
+        padding: 60px 0 40px 0;
+    }
+}
+
+/* Counters Products Mobile Responsive */
+@media (max-width: 768px) {
+    .custom-border {
+        padding-bottom: 40px !important;
+        border-bottom: 1px solid #fff;
+    }
+    
+    .counters-products .counter-item:last-child {
+        padding-top: 20px;
+    }
+}

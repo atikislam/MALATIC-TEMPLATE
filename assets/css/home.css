@@ -1,0 +1,594 @@
+/* Home Page Specific Styles */
+
+/* Banner Section Styles */
+.banner-section {
+    height: 900px;
+    width: 100%;
+    max-width: 1920px;
+    margin: 0 auto;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    margin-top: -120px !important; /* This will bring header above banner */
+}
+
+/* Distributor Section Styles */
+.distributor-section {
+    padding: 60px 0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.distributor-section .container {
+    position: relative;
+    z-index: 2;
+}
+
+.distributor-image {
+    text-align: center;
+}
+
+.distributor-image img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: -650px;
+}
+
+.distributor-content h1 {
+    color: #fff;
+    font-weight: bold;
+    font-size: 40px;
+    margin-bottom: 30px;
+    line-height: 1.2;
+}
+
+.distributor-content p {
+    color: #fff;
+    font-size: 18px;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* Client Slider Section Styles */
+.client-slider {
+    background: #fff;
+    padding: 60px 0;
+    position: relative;
+}
+
+/* Client Slider Styles */
+.client-slider .slider-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 0;
+}
+
+.client-slider .slider-item-img {
+    width: 100%;
+    height: auto;
+    max-width: 115px;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+/* Owl Carousel Navigation Icons Styling for Client Slider */
+.client-slider .owl-nav button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: transparent !important;
+    border: none !important;
+    cursor: pointer;
+    z-index: 100;
+    padding: 0;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: transparent !important;
+}
+
+.client-slider .owl-nav .owl-prev {
+    left: -25px;
+    background-image: url('../images/left-arrow.png') !important;
+    background-size: contain !important;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+}
+
+.client-slider .owl-nav .owl-next {
+    right: -25px;
+    background-image: url('../images/right-arrow.png') !important;
+    background-size: contain !important;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+}
+.client-slider .owl-carousel {
+    margin: 0px 30px;
+}
+/* Hide any default Owl Carousel navigation elements */
+.client-slider .owl-nav .owl-prev::before,
+.client-slider .owl-nav .owl-next::before {
+    display: none !important;
+}
+.client-slider .owl-carousel .owl-nav button{
+height: 30px;
+}
+.client-slider .owl-nav .owl-next::after {
+    display: none !important;
+}
+
+/* Force navigation to always be visible */
+.client-slider .owl-nav {
+    display: block !important;
+}
+
+.client-slider .owl-nav button {
+    display: flex !important;
+}
+
+/* Override any disabled states */
+.client-slider .owl-nav.disabled {
+    display: block !important;
+    pointer-events: auto !important;
+}
+
+.client-slider .owl-nav.disabled button {
+    display: flex !important;
+    pointer-events: auto !important;
+    cursor: pointer !important;
+}
+
+.client-slider .owl-nav.disabled button:hover {
+    opacity: 0.8;
+}
+
+/* Hide dots completely */
+.client-slider .owl-dots {
+    display: none !important;
+}
+
+.client-slider .owl-dots.disabled {
+    display: none !important;
+}
+
+/* Counters and Products Section Styles */
+.counters-products {
+    background: radial-gradient(circle at center, #1a4b8c 0%, #0d2b5a 100%);
+    padding: 200px 0 80px 0;
+    position: relative;
+}
+
+/* Counters Row Styles */
+.counters-products .counters-row {
+    border-radius: 15px;
+    padding: 40px 20px;
+    margin-bottom: 60px;
+    box-shadow: 0 10px 25px rgb(0 0 0 / 30%);
+    position: relative;
+    overflow: hidden;
+}
+
+/* Create gradient background for counters row */
+.counters-products .counters-row::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, #0f1f3d 0%, #1e3a8a 100%);
+    border-radius: 15px;
+    z-index: 0;
+}
+
+/* Add grainy noise overlay for realism */
+.counters-products .counters-row::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100%' height='100%'><filter id='noiseFilter'><feTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='4' stitchTiles='stitch'/></filter><rect width='100%' height='100%' filter='url(%23noiseFilter)' opacity='0.06'/></svg>");
+    pointer-events: none;
+    z-index: 1;
+    border-radius: 15px;
+}
+
+.counters-products .counter-item {
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    z-index: 2;
+}
+
+.counters-products .counter-number {
+    font-size: 56px;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.counters-products .counter-text {
+    font-size: 19px;
+    color: #fff;
+    font-weight: 500;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+/* Products Carousel Row Styles */
+.product-title h2{
+    font-size: 18px;  
+    color: #ffffff;
+    font-weight: 500;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.8);
+    position: relative;
+    z-index: 2;
+}
+
+.products-carousel-row {
+    position: relative;
+    overflow: visible;
+}
+.product-image-container {
+    overflow: visible;
+    position: relative;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.product-image-container img{
+    width: 250px;
+    height: 320px;
+    object-fit: contain;
+    position: relative;
+    top: -40px;
+    z-index: 999;
+    display: block;
+}
+
+/* Owl Carousel specific styling for counters-products */
+.counters-products .owl-carousel {
+    padding: 50px 0;
+    overflow: hidden;
+}
+
+/* Product item styling for Owl Carousel */
+.counters-products .owl-carousel .owl-item {
+    border-radius: 35px;
+    position: relative;
+    box-shadow: 0 10px 25px rgb(0 0 0 / 30%);
+}
+
+/* Add grainy noise overlay for realism */
+.counters-products .owl-carousel .owl-item::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100%' height='100%'><filter id='noiseFilter'><feTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='4' stitchTiles='stitch'/></filter><rect width='100%' height='100%' filter='url(%23noiseFilter)' opacity='0.06'/></svg>");
+    pointer-events: none;
+    z-index: 1;
+    border-radius: 35px;
+}
+
+/* Create rounded corners using pseudo-element with gradient */
+.counters-products .owl-carousel .owl-item::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, #1e3a8a 0%, #0f1f3d 100%);
+    border-radius: 35px;
+    z-index: 0;
+}
+
+/* Owl Carousel Navigation Icons Styling */
+.counters-products .owl-nav button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: transparent !important;
+    border: none !important;
+    cursor: pointer;
+    z-index: 1000;
+    padding: 0;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.counters-products .owl-nav button i {
+    font-size: 24px;
+    color: #fff;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.counters-products .owl-nav .owl-prev {
+    left: -50px;
+}
+
+.counters-products .owl-nav .owl-next {
+    right: -50px;
+}
+
+/* Hide any duplicate navigation elements that Owl Carousel might add */
+.counters-products .owl-nav .owl-prev::before,
+.counters-products .owl-nav .owl-next::before {
+    display: none !important;
+}
+
+.counters-products .owl-nav .owl-prev::after,
+.counters-products .owl-nav .owl-next::after {
+    display: none !important;
+}
+
+/* Allow carousel stage to overflow for image visibility but keep slider in bounds */
+.counters-products .owl-stage-outer {
+    overflow: visible !important;
+}
+
+.counters-products .owl-stage {
+    overflow: visible !important;
+}
+
+/* Keep slider in container bounds while allowing images to overflow upward */
+.counters-products {
+    overflow: hidden;
+}
+
+.products-carousel-row {
+    overflow: hidden;
+}
+.products-carousel-row .product-item{
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+}
+/* Allow only product images to overflow upward */
+.product-image-container {
+    overflow: visible;
+    position: relative;
+    z-index: 10;
+}
+
+.product-image-container img {
+    overflow: visible;
+    position: relative;
+    z-index: 20;
+}
+ .counters-products .owl-carousel .owl-nav .owl-prev {
+    left: 0 !important;
+}
+.counters-products .owl-carousel .owl-nav .owl-next {  
+    right: 0 !important;
+}
+
+/* Brands Section */
+.brands {
+    padding: 60px 0;
+    background-color: #fff;
+    border-bottom: 50px solid #002d85;
+}
+
+.brands-text {
+    text-align: center;
+}
+
+.brands-text h2 {
+    color: #002d85;
+    font-size: 40px;
+    font-weight: bold;
+    margin: 0;
+    text-align: left;
+}
+
+.brands-logos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.brand-logo {
+    max-height: 140px;
+    max-width: 300px;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+
+.brand-logo:hover {
+    transform: scale(1.1);
+}
+
+/* Services Section */
+.services {
+    padding: 60px 0;
+    background-color: #f8f9fa;
+}
+
+.services-text {
+    text-align: center;
+}
+
+.services-text h2 {
+    color: #002d85;
+    font-size: 40px;
+    font-weight: bold;
+    margin: 0;
+    text-align: left;
+}
+
+.services-columns {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.service-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    min-height: 250px;
+    justify-content: space-between;
+}
+
+.service-column:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+}
+
+.service-image {
+    margin-bottom: 15px;
+}
+
+.service-img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+}
+
+.service-column h3 {
+    color: #002d85;
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0 0 15px 0;
+    line-height: 1.3;
+}
+
+.service-btn {
+    background-color: #002d85;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.service-btn:hover {
+    background-color: #1e3a8a;
+    transform: scale(1.05);
+}
+
+/* Notice Section */
+.notice {
+    padding: 60px 0;
+    background-image: url('../images/NOTICIAS_HERO.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-bottom: 10px solid #fff;
+}
+
+.notice-content h2 {
+    color: #0e244c;
+    font-size: 40px;
+    font-weight: bold;
+    margin: 0 0 30px 0;
+    text-transform: uppercase;
+}
+
+.notice-content p {
+    color: #0e244c;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.6;
+    margin: 0 0 20px 0;
+}
+
+.notice-content p:last-child {
+    margin-bottom: 0;
+}
+
+/* Work With Us Section */
+.work-with-us {
+    padding: 60px 0;
+    min-height: 700px;
+    background-image: url('../images/workwithushero.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.work-with-us::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+}
+
+.work-with-us .container {
+    position: relative;
+    z-index: 2;
+    height: 100%;
+}
+
+.work-with-us .row {
+    height: 100%;
+    min-height: 580px;
+}
+
+.work-content {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100%;
+}
+
+.work-content h2 {
+    color: #fff;
+    font-size: 48px;
+    font-weight: bold;
+    margin: 0 0 30px 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.work-btn {
+    background: url(../images/rect_ngulo_46_copia.png) no-repeat;
+    background-size: cover;
+    color: #203967;
+    border: none;
+    padding: 5px 40px;
+    min-height: 20px;
+    width: 300px;
+    font-size: 25px;
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-align: center;
+}

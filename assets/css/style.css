@@ -1,3 +1,8 @@
+/* Global Font Family */
+body {
+    font-family: Arial, sans-serif;
+}
+
 /* Dropdown hover functionality */
 .navbar-nav .dropdown:hover .dropdown-menu {
     display: block;
@@ -30,8 +35,8 @@
 .navbar-style-one{
     border: 1px solid #fff;
     border-radius: 40px;
-    background-color: #ddd !important;
-    padding: 0px 0px;
+    background-color: #fff !important;
+    padding: 0px 0px !important;
 }
 .navbar-style-one .menu-container{
     background-color: #002d85;
@@ -69,7 +74,7 @@
 .navbar-style-one .menu-container > ul > li > a:hover {
     background-color: #000 !important;
     color: #fff !important;
-    border-radius: 0px 40px 40px 0;
+    border-radius: 40px 40px 40px 0;
     position: relative;
 }
 
@@ -86,3 +91,101 @@
     border-top: 25px solid #002d85;
     transform: rotate(-90deg);
 }
+
+/* Header positioning to appear above banner */
+.header {
+    position: relative;
+    z-index: 1000;
+    margin-top: 60px;
+}
+
+/* Footer */
+.main-footer {
+    background-color: #002E85;
+    padding: 60px 0 40px;
+    color: #fff;
+}
+
+.footer-contact h3 {
+    color: #fff;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.footer-contact .address {
+    color: #fff;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.contact-item i {
+    margin-right: 12px;
+    font-size: 18px;
+    width: 20px;
+    color: #fff;
+}
+
+.contact-item a {
+    color: #fff;
+    font-size: 16px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.contact-item a:hover {
+    color: #87CEEB;
+    text-decoration: underline;
+}
+
+.footer-logo {
+    text-align: center;
+}
+
+.footer-logo-img {
+    max-height: 80px;
+    margin-bottom: 15px;
+}
+
+.logo-text {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.footer-social {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 20px;
+}
+
+.social-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    height: 35px;
+    background-color: #fff;
+    border-radius: 5px;
+    color: #002E85;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.social-icon:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.social-icon i {
+    font-size: 20px;
+}
+

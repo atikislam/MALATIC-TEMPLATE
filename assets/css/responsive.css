@@ -1,0 +1,140 @@
+
+
+/* Mobile menu styles - override hover and active design */
+@media (max-width: 991px) {
+    .navbar-style-one .menu-container > ul > li > a:hover,
+    .navbar-style-one .menu-container > ul > li > a.active {
+        color: #fff !important;
+        border-radius: 0 !important;
+        position: relative;
+    }
+    
+    .navbar-style-one .menu-container > ul > li > a:hover::before,
+    .navbar-style-one .menu-container > ul > li > a.active::before {
+        display: none !important;
+    }
+    
+    /* Mobile menu container styles */
+    .navbar-style-one .menu-container {
+        background-color: rgba(0, 0, 0, 0.8) !important;
+        border-radius: 0 !important;
+        padding: 0 !important;
+    }
+    
+    /* Add border-top for all mobile menu items */
+    .navbar-style-one .menu-container ul li a {
+        border-top: 1px solid #ffffff59;
+    }
+    
+    /* Fix collapsed mobile menu background and positioning */
+    .navbar-collapse {
+        margin-top: 5px;
+        border-radius: 0 !important;
+        position: absolute !important;
+        top: 100% !important;
+        left: 0 !important;
+        right: 0 !important;
+        z-index: 1001 !important;
+        width:100% !important;
+        overflow: hidden !important;
+    }
+    
+    /* Remove focus color and outline from mobile menu button */
+    .navbar-toggler:focus,
+    .navbar-toggler:active,
+    .navbar-toggler:focus-visible {
+        outline: none !important;
+        box-shadow: none !important;
+        border-color: transparent !important;
+    }
+    
+    /* Add background color to mobile menu button */
+    .navbar-toggler {
+        background-color: #002d85 !important;
+        border: 1px solid #002d85 !important;
+        color: #fff !important;
+    }
+    
+    /* Make the three horizontal lines white */
+    .navbar-toggler .navbar-toggler-icon {
+        filter: brightness(0) invert(1) !important;
+    }
+}
+
+
+
+
+
+
+
+
+
+/* Footer Mobile Responsive */
+@media (max-width: 768px) {
+    .main-footer {
+        padding: 40px 0 30px;
+    }
+    
+    .footer-contact h3 {
+        font-size: 28px;
+        text-align: center;
+    }
+    
+    .footer-contact .address {
+        text-align: center;
+    }
+    
+    .contact-item {
+        justify-content: center;
+    }
+    
+    .footer-logo {
+        margin: 25px 0 10px 0;
+    }
+    
+    .footer-logo-img {
+        max-height: 60px;
+    }
+    
+    .logo-text {
+        font-size: 16px;
+    }
+    
+    .footer-social {
+        justify-content: center;
+        margin-top: 20px;
+        gap: 20px;
+    }
+    
+    .social-icon {
+        width: 35px;
+        height: 35px;
+    }
+    
+    .social-icon i {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 576px) {
+    .footer-contact h3 {
+        font-size: 24px;
+    }
+    
+    .footer-contact .address {
+        font-size: 14px;
+    }
+    
+    .contact-item span {
+        font-size: 14px;
+    }
+    
+    .footer-logo-img {
+        max-height: 50px;
+    }
+    
+    .logo-text {
+        font-size: 14px;
+    }
+}
+
